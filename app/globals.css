@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-cream: #FAF0D8;
+  --color-cream-light: #FFFDF7;
+  --color-cream-warm: #FFF8E8;
+  --color-beige: #F8EED8;
+  --color-beige-dark: #F2E4C4;
+  --color-maroon: #7A0715;
+  --color-maroon-dark: #58050E;
+  --color-maroon-light: #8B0D18;
+  --color-deep-brown: #5A2B18;
+  --color-gold: #B8893C;
+  --color-gold-light: #D4AF37;
+  --color-gold-soft: #F6EBD4;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-serif: var(--font-heading), 'Playfair Display', Georgia, serif;
+  --font-sans: var(--font-body), 'Poppins', sans-serif;
+  --color-brand-cream: #FFFDF7;
+  --color-brand-cream-warm: #FFF8E8;
+  --color-brand-ivory: #FAF0D8;
+  --color-brand-beige: #F8EED8;
+  --color-brand-maroon: #7A0715;
+  --color-brand-maroon-dark: #58050E;
+  --color-brand-maroon-light: #8B0D18;
+  --color-brand-brown: #5A2B18;
+  --color-brand-gold: #B8893C;
+  --color-brand-gold-light: #D4AF37;
+  --color-brand-gold-soft: #F6EBD4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFDF7;
+  color: #5A2B18;
+  font-family: var(--font-body), sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading), serif;
+}
+
+/* Custom Scrollbar for Devotional Polish */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF0D8;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8893C;
+  border-radius: 6px;
+  border: 2px solid #FAF0D8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A0715;
+}
+
+/* Devotional Ornamental Dividers */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.75rem auto 1.5rem auto;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: "";
+  height: 1px;
+  width: 48px;
+  background: linear-gradient(90deg, transparent, #B8893C, transparent);
+}
+
+/* Subtle glow effects */
+.devotional-glow {
+  box-shadow: 0 10px 30px -10px rgba(184, 137, 60, 0.25);
+}
+
+.maroon-card-shadow {
+  box-shadow: 0 10px 25px -8px rgba(122, 7, 21, 0.12), 0 4px 6px -2px rgba(122, 7, 21, 0.05);
 }

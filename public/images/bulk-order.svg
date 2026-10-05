@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pBulkBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="80%" stop-color="#FAF0D8"/>
+      <stop offset="100%" stop-color="#F2E4C4"/>
+    </radialGradient>
+    <linearGradient id="maroonBulk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991B1B"/>
+      <stop offset="50%" stop-color="#7A0715"/>
+      <stop offset="100%" stop-color="#4C0519"/>
+    </linearGradient>
+    <linearGradient id="goldBulk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+    <filter id="packShadowBulk">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#4A0E17" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="320" fill="url(#pBulkBg)"/>
+  <circle cx="200" cy="160" r="120" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.3" stroke-dasharray="6 4"/>
+
+  <!-- Stack of Multiple Prasad Gift Boxes -->
+  <g filter="url(#packShadowBulk)">
+    <ellipse cx="200" cy="275" rx="125" ry="22" fill="#5A2B18" opacity="0.25"/>
+
+    <!-- Bottom Left Box -->
+    <g transform="translate(-55, 30)">
+      <path d="M 120,165 L 195,195 L 270,165 L 270,225 L 195,255 L 120,225 Z" fill="url(#maroonBulk)" stroke="#D4AF37" stroke-width="1.5"/>
+      <path d="M 120,165 L 195,135 L 270,165 L 195,195 Z" fill="#991B1B" stroke="#D4AF37" stroke-width="1.5"/>
+      <path d="M 185,140 L 205,133 L 205,250 L 185,250 Z" fill="url(#goldBulk)" opacity="0.9"/>
+    </g>
+
+    <!-- Bottom Right Box -->
+    <g transform="translate(65, 30)">
+      <path d="M 120,165 L 195,195 L 270,165 L 270,225 L 195,255 L 120,225 Z" fill="url(#maroonBulk)" stroke="#D4AF37" stroke-width="1.5"/>
+      <path d="M 120,165 L 195,135 L 270,165 L 195,195 Z" fill="#991B1B" stroke="#D4AF37" stroke-width="1.5"/>
+      <path d="M 185,140 L 205,133 L 205,250 L 185,250 Z" fill="url(#goldBulk)" opacity="0.9"/>
+    </g>
+
+    <!-- Center Top Box (Stacked upon them) -->
+    <g transform="translate(5, -25)">
+      <path d="M 130,140 L 195,168 L 260,140 L 260,195 L 195,223 L 130,195 Z" fill="url(#maroonBulk)" stroke="#D4AF37" stroke-width="2"/>
+      <path d="M 130,140 L 195,112 L 260,140 L 195,168 Z" fill="#B91C1C" stroke="#D4AF37" stroke-width="2"/>
+      <path d="M 188,115 L 202,110 L 202,220 L 188,220 Z" fill="url(#goldBulk)" opacity="0.95"/>
+      <!-- Decorative Bow on Top -->
+      <circle cx="195" cy="138" r="10" fill="url(#goldBulk)" stroke="#FEF08A" stroke-width="1.5"/>
+      <circle cx="195" cy="138" r="4" fill="#7A0715"/>
+    </g>
+
+    <!-- Bulk Badge / Festive Garland -->
+    <circle cx="280" cy="100" r="24" fill="url(#goldBulk)" stroke="#FFF" stroke-width="1.8" filter="url(#packShadowBulk)"/>
+    <text x="280" y="100" font-family="sans-serif" font-size="10" font-weight="bold" fill="#7A0715" text-anchor="middle">
+      BULK
+    </text>
+    <text x="280" y="111" font-family="sans-serif" font-size="7" font-weight="bold" fill="#7A0715" text-anchor="middle">
+      ORDERS
+    </text>
+  </g>
+</svg>

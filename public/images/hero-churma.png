@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="bowlBackglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE082" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FFF8E8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFF8E8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Traditional Brass / Kansa Bowl Gradient -->
+    <linearGradient id="brassBowl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="30%" stop-color="#D4AF37"/>
+      <stop offset="60%" stop-color="#B8860B"/>
+      <stop offset="85%" stop-color="#8C6200"/>
+      <stop offset="100%" stop-color="#553A00"/>
+    </linearGradient>
+
+    <linearGradient id="bowlRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#996515"/>
+      <stop offset="25%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFF9C4"/>
+      <stop offset="75%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#8C6200"/>
+    </linearGradient>
+
+    <!-- Churma Golden-Brown Roasted Gradient -->
+    <radialGradient id="churmaGrain" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#F5B041"/>
+      <stop offset="25%" stop-color="#EB984E"/>
+      <stop offset="60%" stop-color="#D35400"/>
+      <stop offset="85%" stop-color="#A04000"/>
+      <stop offset="100%" stop-color="#6E2C00"/>
+    </radialGradient>
+
+    <!-- Desi Ghee Glistening Gloss -->
+    <linearGradient id="gheeGlow" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#FFD54F" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FF8F00" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Almond / Badam Gradient -->
+    <linearGradient id="almond" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="50%" stop-color="#FFE0B2"/>
+      <stop offset="100%" stop-color="#D7CCC8"/>
+    </linearGradient>
+
+    <!-- Pistachio / Pista Gradient -->
+    <linearGradient id="pista" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="50%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+
+    <filter id="shadow3d">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#5A2B18" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Aura Behind Bowl -->
+  <ellipse cx="300" cy="270" rx="260" ry="180" fill="url(#bowlBackglow)"/>
+
+  <!-- Ornate Decorative Plate / Thali Base -->
+  <g filter="url(#shadow3d)">
+    <!-- Base Plate Rim -->
+    <ellipse cx="300" cy="350" rx="270" ry="95" fill="#FAF0D8" stroke="#D4AF37" stroke-width="4"/>
+    <ellipse cx="300" cy="350" rx="255" ry="88" fill="none" stroke="#B8893C" stroke-width="1.5" stroke-dasharray="8 6"/>
+
+    <!-- Small Golden Balls on Plate Edge -->
+    <g fill="#D4AF37">
+      <circle cx="60" cy="350" r="4"/><circle cx="540" cy="350" r="4"/>
+      <circle cx="120" cy="405" r="4"/><circle cx="480" cy="405" r="4"/>
+      <circle cx="200" cy="435" r="4"/><circle cx="400" cy="435" r="4"/>
+      <circle cx="300" cy="444" r="4"/>
+      <circle cx="120" cy="295" r="4"/><circle cx="480" cy="295" r="4"/>
+      <circle cx="200" cy="265" r="4"/><circle cx="400" cy="265" r="4"/>
+      <circle cx="300" cy="256" r="4"/>
+    </g>
+
+    <!-- Main Brass Urli / Kadhai Bowl Body -->
+    <path d="M 120,260 C 120,380 480,380 480,260 C 480,240 120,240 120,260 Z" fill="url(#brassBowl)"/>
+    
+    <!-- Ornate Bowl Handles (Kada) -->
+    <path d="M 115,265 C 75,250 75,290 115,280" stroke="url(#brassBowl)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 485,265 C 525,250 525,290 485,280" stroke="url(#brassBowl)" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+    <!-- Bowl Rim Outer Lip -->
+    <ellipse cx="300" cy="250" rx="185" ry="46" fill="url(#bowlRim)" stroke="#8C6200" stroke-width="2"/>
+    <ellipse cx="300" cy="250" rx="172" ry="40" fill="#6E2C00"/>
+
+    <!-- Heap of Divine Churma Prasad -->
+    <!-- Churma mound base -->
+    <path d="M 135,248 C 140,160 210,135 300,135 C 390,135 460,160 465,248 C 455,275 145,275 135,248 Z" fill="url(#churmaGrain)"/>
+    
+    <!-- Churma Texture Crumbs & Golden Granules -->
+    <g fill="#FAD7A0" opacity="0.85">
+      <ellipse cx="280" cy="180" rx="18" ry="12"/>
+      <ellipse cx="330" cy="175" rx="15" ry="10"/>
+      <ellipse cx="230" cy="205" rx="22" ry="14"/>
+      <ellipse cx="380" cy="200" rx="20" ry="13"/>
+      <ellipse cx="295" cy="215" rx="26" ry="16" fill="#F8C471"/>
+      <ellipse cx="180" cy="235" rx="16" ry="11"/>
+      <ellipse cx="420" cy="230" rx="18" ry="12"/>
+      <ellipse cx="240" cy="245" rx="24" ry="15"/>
+      <ellipse cx="360" cy="245" rx="24" ry="15"/>
+      <ellipse cx="300" cy="250" rx="30" ry="18" fill="#FDEBD0"/>
+    </g>
+
+    <!-- Darker Roasted Crumbles -->
+    <g fill="#935116" opacity="0.7">
+      <circle cx="260" cy="170" r="4"/><circle cx="350" cy="185" r="5"/>
+      <circle cx="210" cy="215" r="5"/><circle cx="400" cy="210" r="4"/>
+      <circle cx="280" cy="230" r="6"/><circle cx="330" cy="235" r="6"/>
+      <circle cx="165" cy="242" r="5"/><circle cx="435" cy="240" r="4"/>
+    </g>
+
+    <!-- Pure Desi Ghee Golden Glaze -->
+    <path d="M 210,195 Q 300,210 390,190 Q 300,240 210,195 Z" fill="url(#gheeGlow)"/>
+
+    <!-- Roasted Almonds (Badam) Slivers -->
+    <g transform="rotate(-15 250 190)">
+      <path d="M 240,185 C 240,175 260,175 265,190 C 265,200 245,200 240,185 Z" fill="url(#almond)" stroke="#BCAAA4" stroke-width="0.8"/>
+    </g>
+    <g transform="rotate(25 345 195)">
+      <path d="M 335,190 C 335,180 355,180 360,195 C 360,205 340,205 335,190 Z" fill="url(#almond)" stroke="#BCAAA4" stroke-width="0.8"/>
+    </g>
+    <g transform="rotate(-30 205 230)">
+      <path d="M 195,225 C 195,215 215,215 220,230 C 220,240 200,240 195,225 Z" fill="url(#almond)" stroke="#BCAAA4" stroke-width="0.8"/>
+    </g>
+    <g transform="rotate(12 385 225)">
+      <path d="M 375,220 C 375,210 395,210 400,225 C 400,235 380,235 375,220 Z" fill="url(#almond)" stroke="#BCAAA4" stroke-width="0.8"/>
+    </g>
+
+    <!-- Pistachios (Pista) -->
+    <ellipse cx="290" cy="195" rx="6" ry="10" fill="url(#pista)" transform="rotate(35 290 195)"/>
+    <ellipse cx="320" cy="210" rx="5" ry="9" fill="url(#pista)" transform="rotate(-20 320 210)"/>
+    <ellipse cx="265" cy="235" rx="5" ry="8" fill="url(#pista)" transform="rotate(45 265 235)"/>
+    <ellipse cx="340" cy="235" rx="6" ry="10" fill="url(#pista)" transform="rotate(-35 340 235)"/>
+
+    <!-- Saffron / Kesar Threads -->
+    <path d="M 275,175 Q 282,170 288,178" stroke="#D32F2F" stroke-width="1.8" fill="none"/>
+    <path d="M 315,182 Q 324,188 322,175" stroke="#E64A19" stroke-width="1.8" fill="none"/>
+    <path d="M 298,205 Q 306,198 312,204" stroke="#D32F2F" stroke-width="1.8" fill="none"/>
+
+    <!-- Sacred Tulsi Leaf in Center (Symbol of Lord's Bhog) -->
+    <g transform="translate(300, 150) scale(1.1)">
+      <!-- Main center leaf -->
+      <path d="M 0,0 C -12,-15 -10,-32 0,-40 C 10,-32 12,-15 0,0 Z" fill="#2E7D32" stroke="#66BB6A" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="-36" stroke="#81C784" stroke-width="0.8"/>
+      <!-- Left side leaf -->
+      <path d="M -4,-12 C -18,-18 -22,-30 -16,-36 C -8,-32 -4,-22 -4,-12 Z" fill="#388E3C" stroke="#81C784" stroke-width="0.8"/>
+      <!-- Right side leaf -->
+      <path d="M 4,-12 C 18,-18 22,-30 16,-36 C 8,-32 4,-22 4,-12 Z" fill="#388E3C" stroke="#81C784" stroke-width="0.8"/>
+      <!-- Manjari (sacred flower tip) -->
+      <circle cx="0" cy="-44" r="2" fill="#8D6E63"/>
+      <circle cx="0" cy="-48" r="1.5" fill="#A1887F"/>
+    </g>
+
+    <!-- Little Brass Diya with flame on the side -->
+    <g transform="translate(470, 310) scale(0.65)">
+      <!-- Diya Base -->
+      <path d="M 10,40 Q 50,75 90,40 Q 50,30 10,40 Z" fill="#D4AF37" stroke="#8C6200" stroke-width="2"/>
+      <!-- Ghee in Diya -->
+      <ellipse cx="50" cy="42" rx="32" ry="7" fill="#FFA000"/>
+      <!-- Wick and Flame -->
+      <path d="M 50,40 Q 52,20 50,10 Q 38,25 50,40 Z" fill="#FFD54F" filter="url(#glow)"/>
+      <path d="M 50,38 Q 51,25 50,16 Q 44,27 50,38 Z" fill="#FF3D00"/>
+    </g>
+  </g>
+</svg>

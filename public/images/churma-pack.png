@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="cpBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="70%" stop-color="#FBF3E2"/>
+      <stop offset="100%" stop-color="#F3E5C8"/>
+    </radialGradient>
+    <linearGradient id="boxMaroon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991B1B"/>
+      <stop offset="35%" stop-color="#7F1D1D"/>
+      <stop offset="75%" stop-color="#601414"/>
+      <stop offset="100%" stop-color="#450A0A"/>
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#EAB308"/>
+      <stop offset="75%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+    <filter id="boxShadow">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#450A0A" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="400" fill="url(#cpBg)"/>
+
+  <!-- Ornate Decorative Background Ring -->
+  <circle cx="250" cy="180" r="150" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.3" stroke-dasharray="8 6"/>
+
+  <!-- Packaging Box in Isometric 3D -->
+  <g filter="url(#boxShadow)">
+    <!-- Box Bottom Shadow -->
+    <ellipse cx="250" cy="305" rx="145" ry="24" fill="#5A2B18" opacity="0.2"/>
+
+    <!-- Front Face of Box -->
+    <path d="M 140,195 L 250,240 L 360,195 L 360,290 L 250,335 L 140,290 Z" fill="url(#boxMaroon)" stroke="#D4AF37" stroke-width="1.5"/>
+
+    <!-- Top Lid of Box -->
+    <path d="M 140,195 L 250,150 L 360,195 L 250,240 Z" fill="#991B1B" stroke="#D4AF37" stroke-width="1.5"/>
+
+    <!-- Left & Right Front Face Shading -->
+    <path d="M 140,195 L 250,240 L 250,335 L 140,290 Z" fill="#7F1D1D" opacity="0.4"/>
+    <path d="M 250,240 L 360,195 L 360,290 L 250,335 Z" fill="#450A0A" opacity="0.3"/>
+
+    <!-- Golden Foil Ribbon across Box -->
+    <!-- Vertical Ribbon -->
+    <path d="M 238,155 L 262,145 L 262,330 L 238,330 Z" fill="url(#goldRibbon)" opacity="0.9"/>
+    <!-- Horizontal Ribbon on Front Left -->
+    <path d="M 140,238 L 250,283 L 250,303 L 140,258 Z" fill="url(#goldRibbon)" opacity="0.85"/>
+    <path d="M 250,283 L 360,238 L 360,258 L 250,303 Z" fill="url(#goldRibbon)" opacity="0.75"/>
+
+    <!-- Royal Seal / Golden Medallion on Top Lid -->
+    <g transform="translate(250, 195)">
+      <circle cx="0" cy="0" r="28" fill="url(#goldRibbon)" stroke="#FEF08A" stroke-width="2"/>
+      <circle cx="0" cy="0" r="23" fill="#7F1D1D" stroke="#FEF08A" stroke-width="1"/>
+      <!-- Slogan on seal -->
+      <text x="0" y="3" font-family="serif" font-size="10" font-weight="bold" fill="#FEF08A" text-anchor="middle">
+        SHREE SHYAM
+      </text>
+      <text x="0" y="14" font-family="serif" font-size="8" fill="#FDE047" text-anchor="middle">
+        PRASAD
+      </text>
+    </g>
+
+    <!-- Peacock Feather Crest on Box Front -->
+    <g transform="translate(195, 270) scale(0.3)">
+      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#00897B"/>
+      <ellipse cx="0" cy="0" rx="14" ry="18" fill="#F57F17"/>
+      <ellipse cx="0" cy="0" rx="9" ry="12" fill="#1A237E"/>
+    </g>
+    <!-- Hygienic Sealed Badge -->
+    <rect x="270" y="270" width="75" height="20" rx="4" fill="#065F46" stroke="#34D399" stroke-width="1"/>
+    <text x="307" y="284" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ECFDF5" text-anchor="middle">
+      100% SEALED
+    </text>
+  </g>
+
+  <!-- Title Badge overlay at bottom -->
+  <rect x="125" y="345" width="250" height="36" rx="18" fill="#7A0715" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="250" y="368" font-family="serif" font-size="15" font-weight="bold" fill="#FDE047" text-anchor="middle" letter-spacing="1">
+    Carefully Packed
+  </text>
+</svg>

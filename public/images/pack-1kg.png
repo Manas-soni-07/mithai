@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p1kgBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="80%" stop-color="#FAF0D8"/>
+      <stop offset="100%" stop-color="#F2E4C4"/>
+    </radialGradient>
+    <linearGradient id="maroon1kg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7F1D1D"/>
+      <stop offset="40%" stop-color="#7A0715"/>
+      <stop offset="80%" stop-color="#58050E"/>
+      <stop offset="100%" stop-color="#360006"/>
+    </linearGradient>
+    <linearGradient id="goldLid1kg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="30%" stop-color="#FDE047"/>
+      <stop offset="60%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+    <filter id="packShadow1kg">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#4A0E17" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="320" fill="url(#p1kgBg)"/>
+  <circle cx="200" cy="160" r="120" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.35" stroke-dasharray="6 4"/>
+
+  <!-- 1 KG Grand Royal Mithai / Prasad Box with Handle -->
+  <g filter="url(#packShadow1kg)">
+    <ellipse cx="200" cy="270" rx="110" ry="24" fill="#5A2B18" opacity="0.26"/>
+
+    <!-- Royal Rigid Box Base -->
+    <path d="M 90,135 L 200,175 L 310,135 L 310,240 L 200,280 L 90,240 Z" fill="url(#maroon1kg)" stroke="#D4AF37" stroke-width="2.5"/>
+    <path d="M 90,135 L 200,95 L 310,135 L 200,175 Z" fill="#991B1B" stroke="#D4AF37" stroke-width="2.5"/>
+
+    <!-- Gold Foil Border around Box Edge -->
+    <path d="M 96,141 L 200,178 L 304,141" stroke="#FDE047" stroke-width="1.2" fill="none"/>
+    <line x1="200" y1="175" x2="200" y2="280" stroke="#D4AF37" stroke-width="2"/>
+
+    <!-- Gold Handle on Top -->
+    <path d="M 175,95 C 175,65 225,65 225,95" stroke="url(#goldLid1kg)" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M 175,95 C 175,65 225,65 225,95" stroke="#FEF08A" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Intricate Traditional Jali / Mandala Pattern on Box Face -->
+    <g transform="translate(145, 208) scale(0.65)" opacity="0.8">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#FDE047" stroke-width="1"/>
+      <ellipse cx="0" cy="0" rx="4" ry="12" fill="#FDE047"/>
+      <ellipse cx="0" cy="0" rx="12" ry="4" fill="#FDE047"/>
+    </g>
+
+    <g transform="translate(255, 208) scale(0.65)" opacity="0.8">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#FDE047" stroke-width="1"/>
+      <ellipse cx="0" cy="0" rx="4" ry="12" fill="#FDE047"/>
+      <ellipse cx="0" cy="0" rx="12" ry="4" fill="#FDE047"/>
+    </g>
+
+    <!-- 1 kg Golden Badge -->
+    <circle cx="280" cy="115" r="24" fill="url(#goldLid1kg)" stroke="#FFF" stroke-width="2" filter="url(#packShadow1kg)"/>
+    <text x="280" y="117" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7A0715" text-anchor="middle">
+      1 kg
+    </text>
+    <text x="280" y="127" font-family="sans-serif" font-size="7" font-weight="bold" fill="#7A0715" text-anchor="middle">
+      FAMILY PACK
+    </text>
+  </g>
+</svg>

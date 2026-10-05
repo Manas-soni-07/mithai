@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Divine Aura Gradients -->
+    <radialGradient id="divineAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9C4" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#FFE082" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#FFB300" stop-opacity="0.6"/>
+      <stop offset="85%" stop-color="#E65100" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7A0715" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="faceShyam" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#283593"/>
+      <stop offset="40%" stop-color="#1A237E"/>
+      <stop offset="85%" stop-color="#0D1B2A"/>
+      <stop offset="100%" stop-color="#050C1A"/>
+    </radialGradient>
+
+    <linearGradient id="crownGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="35%" stop-color="#FFD700"/>
+      <stop offset="70%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#8D6E10"/>
+    </linearGradient>
+
+    <linearGradient id="marigoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEE58"/>
+      <stop offset="40%" stop-color="#FFA726"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="40%" stop-color="#C62828"/>
+      <stop offset="100%" stop-color="#7A0715"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Warm Divine Radiant Mandala -->
+  <rect width="600" height="600" fill="#FFFDF8"/>
+  <circle cx="300" cy="300" r="280" fill="url(#divineAura)"/>
+
+  <!-- Ornate Golden Ring Border -->
+  <circle cx="300" cy="300" r="270" fill="none" stroke="#D4AF37" stroke-width="3"/>
+  <circle cx="300" cy="300" r="262" fill="none" stroke="#B8893C" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <circle cx="300" cy="300" r="255" fill="none" stroke="#7A0715" stroke-width="1" opacity="0.4"/>
+
+  <!-- Sunburst Rays -->
+  <g stroke="#F9A825" stroke-width="2" opacity="0.35">
+    <line x1="300" y1="300" x2="300" y2="40"/>
+    <line x1="300" y1="300" x2="480" y2="120"/>
+    <line x1="300" y1="300" x2="560" y2="300"/>
+    <line x1="300" y1="300" x2="480" y2="480"/>
+    <line x1="300" y1="300" x2="300" y2="560"/>
+    <line x1="300" y1="300" x2="120" y2="480"/>
+    <line x1="300" y1="300" x2="40" y2="300"/>
+    <line x1="300" y1="300" x2="120" y2="120"/>
+    <!-- Diagonals -->
+    <line x1="300" y1="300" x2="400" y2="60"/>
+    <line x1="300" y1="300" x2="200" y2="60"/>
+    <line x1="300" y1="300" x2="540" y2="200"/>
+    <line x1="300" y1="300" x2="60" y2="200"/>
+  </g>
+
+  <!-- Crown Peacock Feather (Mor Pankh) -->
+  <g transform="translate(300, 110) scale(0.7) translate(-100, -170)">
+    <path d="M 100,320 C 95,240 85,150 100,20" stroke="#FFE082" stroke-width="4"/>
+    <g stroke="#388E3C" stroke-width="2" opacity="0.8">
+      <path d="M 97,160 C 40,140 30,100 20,60" />
+      <path d="M 103,160 C 160,140 170,100 180,60" />
+      <path d="M 98,120 C 45,95 40,65 35,25" />
+      <path d="M 102,120 C 155,95 160,65 165,25" />
+    </g>
+    <ellipse cx="100" cy="55" rx="36" ry="46" fill="#00897B"/>
+    <ellipse cx="100" cy="55" rx="28" ry="36" fill="#F57F17"/>
+    <ellipse cx="100" cy="53" rx="20" ry="26" fill="#0288D1"/>
+    <ellipse cx="100" cy="51" rx="13" ry="17" fill="#1A237E"/>
+    <circle cx="96" cy="46" r="3.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Grand Golden Mukut / Crown -->
+  <path d="M 200,240 L 220,150 L 260,190 L 300,120 L 340,190 L 380,150 L 400,240 Z" fill="url(#crownGold)" filter="url(#glow)" stroke="#FFF59D" stroke-width="2"/>
+  
+  <!-- Crown Ornaments & Jewels -->
+  <circle cx="300" cy="145" r="7" fill="#C62828" stroke="#FFE082" stroke-width="1.5"/>
+  <circle cx="260" cy="205" r="5" fill="#00897B" stroke="#FFE082" stroke-width="1.2"/>
+  <circle cx="340" cy="205" r="5" fill="#00897B" stroke="#FFE082" stroke-width="1.2"/>
+  <path d="M 215,225 Q 300,238 385,225" stroke="#7A0715" stroke-width="4" fill="none"/>
+  <circle cx="300" cy="200" r="10" fill="#EF5350" stroke="#FFD700" stroke-width="2"/>
+
+  <!-- Divine Face (Shyam Varna) -->
+  <path d="M 225,240 C 225,360 250,410 300,410 C 350,410 375,360 375,240 Z" fill="url(#faceShyam)"/>
+
+  <!-- Sacred Khatu Shyam Tilak (Tripundra / Urdhva Pundra) -->
+  <!-- Yellow / Chandan base -->
+  <path d="M 292,230 L 292,295 C 292,308 308,308 308,295 L 308,230 Z" fill="#FFF176" stroke="#FBC02D" stroke-width="1"/>
+  <!-- Central Red Kumkum / Vermilion Streak -->
+  <path d="M 297,235 L 297,290 C 297,298 303,298 303,290 L 303,235 Z" fill="#D32F2F"/>
+  <circle cx="300" cy="303" r="3.5" fill="#D32F2F"/>
+
+  <!-- Divine Eyes (Padmadal Lochan / Lotus Eyes) -->
+  <!-- Left Eye -->
+  <path d="M 245,305 Q 268,290 285,308 Q 268,322 245,305 Z" fill="#FFFFFF"/>
+  <circle cx="268" cy="306" r="6.5" fill="#1A237E"/>
+  <circle cx="269" cy="305" r="2" fill="#FFFFFF"/>
+  <path d="M 242,303 Q 266,284 288,305" stroke="#000000" stroke-width="2" fill="none"/>
+
+  <!-- Right Eye -->
+  <path d="M 355,305 Q 332,290 315,308 Q 332,322 355,305 Z" fill="#FFFFFF"/>
+  <circle cx="332" cy="306" r="6.5" fill="#1A237E"/>
+  <circle cx="331" cy="305" r="2" fill="#FFFFFF"/>
+  <path d="M 358,303 Q 334,284 312,305" stroke="#000000" stroke-width="2" fill="none"/>
+
+  <!-- Gentle Divine Smile -->
+  <path d="M 285,355 Q 300,370 315,355" stroke="#EF5350" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Nose & Golden Nath / Ring -->
+  <path d="M 300,295 L 300,335 L 296,338" stroke="#3949AB" stroke-width="1.8" fill="none"/>
+  <circle cx="290" cy="340" r="5" fill="none" stroke="#FFD700" stroke-width="2"/>
+  <circle cx="288" cy="342" r="1.5" fill="#C62828"/>
+
+  <!-- Kundal (Golden Earrings) -->
+  <circle cx="218" cy="315" r="12" fill="url(#crownGold)" stroke="#FFE082" stroke-width="1.5"/>
+  <circle cx="218" cy="315" r="5" fill="#C62828"/>
+  <circle cx="382" cy="315" r="12" fill="url(#crownGold)" stroke="#FFE082" stroke-width="1.5"/>
+  <circle cx="382" cy="315" r="5" fill="#C62828"/>
+
+  <!-- Floral Garlands (Genda / Marigold & Gulab / Red Rose) -->
+  <!-- Rose layer around neck -->
+  <g>
+    <path d="M 180,410 Q 300,470 420,410 C 440,480 430,520 400,560 Q 300,590 200,560 C 170,520 160,480 180,410 Z" fill="#7A0715" opacity="0.3"/>
+    
+    <!-- Red Roses -->
+    <circle cx="210" cy="425" r="16" fill="url(#roseGrad)" stroke="#FFE082" stroke-width="1"/>
+    <circle cx="245" cy="445" r="16" fill="url(#roseGrad)" stroke="#FFE082" stroke-width="1"/>
+    <circle cx="280" cy="455" r="16" fill="url(#roseGrad)" stroke="#FFE082" stroke-width="1"/>
+    <circle cx="320" cy="455" r="16" fill="url(#roseGrad)" stroke="#FFE082" stroke-width="1"/>
+    <circle cx="355" cy="445" r="16" fill="url(#roseGrad)" stroke="#FFE082" stroke-width="1"/>
+    <circle cx="390" cy="425" r="16" fill="url(#roseGrad)" stroke="#FFE082" stroke-width="1"/>
+
+    <!-- Marigold Layer -->
+    <circle cx="190" cy="460" r="18" fill="url(#marigoldGrad)" stroke="#FFF59D" stroke-width="1"/>
+    <circle cx="225" cy="485" r="18" fill="url(#marigoldGrad)" stroke="#FFF59D" stroke-width="1"/>
+    <circle cx="265" cy="500" r="18" fill="url(#marigoldGrad)" stroke="#FFF59D" stroke-width="1"/>
+    <circle cx="300" cy="505" r="19" fill="url(#marigoldGrad)" stroke="#FFF59D" stroke-width="1"/>
+    <circle cx="335" cy="500" r="18" fill="url(#marigoldGrad)" stroke="#FFF59D" stroke-width="1"/>
+    <circle cx="375" cy="485" r="18" fill="url(#marigoldGrad)" stroke="#FFF59D" stroke-width="1"/>
+    <circle cx="410" cy="460" r="18" fill="url(#marigoldGrad)" stroke="#FFF59D" stroke-width="1"/>
+
+    <!-- Outer Rose Layer -->
+    <circle cx="210" cy="525" r="16" fill="url(#roseGrad)"/>
+    <circle cx="250" cy="545" r="16" fill="url(#roseGrad)"/>
+    <circle cx="300" cy="555" r="17" fill="url(#roseGrad)"/>
+    <circle cx="350" cy="545" r="16" fill="url(#roseGrad)"/>
+    <circle cx="390" cy="525" r="16" fill="url(#roseGrad)"/>
+  </g>
+
+  <!-- Sacred Tulsi Leaf in garland -->
+  <path d="M 300,480 C 290,465 295,455 300,450 C 305,455 310,465 300,480 Z" fill="#2E7D32" stroke="#81C784" stroke-width="1"/>
+
+  <!-- Divine Devotional Bottom Banner Text -->
+  <rect x="150" y="555" width="300" height="32" rx="16" fill="#7A0715" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="300" y="576" font-family="serif" font-size="16" font-weight="bold" fill="#FFE082" text-anchor="middle" letter-spacing="2">
+    ॥ हारे का सहारा - श्री श्याम हमारा ॥
+  </text>
+</svg>

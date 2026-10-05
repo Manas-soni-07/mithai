@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="featherGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#00A86B" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#0047AB" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1B1464" stop-opacity="0.9" />
+    </radialGradient>
+    <linearGradient id="goldStem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+    <radialGradient id="eyeCenter" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#1A237E" />
+      <stop offset="45%" stop-color="#0D47A1" />
+      <stop offset="70%" stop-color="#00897B" />
+      <stop offset="90%" stop-color="#F57F17" />
+      <stop offset="100%" stop-color="#B8860B" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Divine Aura -->
+  <circle cx="60" cy="60" r="54" fill="#FAF0D8" stroke="#D4AF37" stroke-width="2" stroke-dasharray="3 2" opacity="0.8"/>
+  <circle cx="60" cy="60" r="48" fill="#FFF8E8" stroke="#B8893C" stroke-width="1" opacity="0.6"/>
+
+  <!-- Feather Stem -->
+  <path d="M 60,105 Q 56,65 60,25" fill="none" stroke="url(#goldStem)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Outer Feather Strands -->
+  <g stroke="#2E7D32" stroke-width="1.2" opacity="0.85">
+    <path d="M 59,60 Q 30,55 24,35" fill="none"/>
+    <path d="M 61,60 Q 90,55 96,35" fill="none"/>
+    <path d="M 59,50 Q 25,42 22,24" fill="none"/>
+    <path d="M 61,50 Q 95,42 98,24" fill="none"/>
+    <path d="M 59,40 Q 32,30 35,16" fill="none"/>
+    <path d="M 61,40 Q 88,30 85,16" fill="none"/>
+    <path d="M 60,30 Q 45,18 50,12" fill="none"/>
+    <path d="M 60,30 Q 75,18 70,12" fill="none"/>
+  </g>
+
+  <!-- Feather Eye Outer Glow -->
+  <ellipse cx="60" cy="38" rx="24" ry="28" fill="url(#featherGlow)"/>
+  
+  <!-- Feather Eye Ring 1 (Gold/Amber) -->
+  <ellipse cx="60" cy="38" rx="18" ry="21" fill="#FFB300" stroke="#FFE082" stroke-width="1.5"/>
+
+  <!-- Feather Eye Ring 2 (Emerald Turquoise) -->
+  <ellipse cx="60" cy="38" rx="14" ry="16" fill="#00897B"/>
+
+  <!-- Feather Eye Center (Deep Royal Blue) -->
+  <ellipse cx="60" cy="37" rx="9" ry="11" fill="url(#eyeCenter)"/>
+
+  <!-- Inner Sparkle -->
+  <circle cx="58" cy="34" r="2.5" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="63" cy="40" r="1.2" fill="#FFE082" opacity="0.8"/>
+
+  <!-- Flute / Bansuri Golden Accent below -->
+  <path d="M 32,92 C 45,86 75,86 88,92" fill="none" stroke="#B8893C" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="48" cy="89" r="1.5" fill="#7A0715"/>
+  <circle cx="56" cy="89" r="1.5" fill="#7A0715"/>
+  <circle cx="64" cy="89" r="1.5" fill="#7A0715"/>
+  <circle cx="72" cy="89" r="1.5" fill="#7A0715"/>
+</svg>

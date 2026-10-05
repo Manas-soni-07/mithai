@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="c4Aura" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#FCD34D" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7F1D1D" stop-opacity="0.1"/>
+    </radialGradient>
+    <linearGradient id="brassPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#EAB308"/>
+      <stop offset="75%" stop-color="#A16207"/>
+      <stop offset="100%" stop-color="#713F12"/>
+    </linearGradient>
+    <filter id="diyaGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Warm Devotional Canvas -->
+  <rect width="500" height="400" fill="#FFFDF8"/>
+  <ellipse cx="250" cy="180" rx="200" ry="150" fill="url(#c4Aura)"/>
+
+  <!-- Holy Temple Rays / Aura -->
+  <g stroke="#F59E0B" stroke-width="1.2" opacity="0.35">
+    <line x1="250" y1="180" x2="250" y2="20"/>
+    <line x1="250" y1="180" x2="380" y2="40"/>
+    <line x1="250" y1="180" x2="430" y2="120"/>
+    <line x1="250" y1="180" x2="120" y2="40"/>
+    <line x1="250" y1="180" x2="70" y2="120"/>
+  </g>
+
+  <!-- Devotional Offering Plate (Bhog Thali) with Churma -->
+  <ellipse cx="220" cy="275" rx="140" ry="50" fill="url(#brassPlate)" stroke="#CA8A04" stroke-width="2"/>
+  <ellipse cx="220" cy="270" rx="130" ry="44" fill="#854D0E"/>
+
+  <!-- Heap of Churma Bhog -->
+  <path d="M 125,268 C 130,200 170,170 220,170 C 270,170 310,200 315,268 C 300,285 140,285 125,268 Z" fill="#F59E0B"/>
+  <path d="M 150,260 C 160,210 190,185 220,185 C 250,185 280,210 290,260 Z" fill="#FBBF24"/>
+
+  <!-- Dry fruits & saffron on Churma -->
+  <circle cx="205" cy="205" r="4" fill="#FFFBEB"/>
+  <circle cx="235" cy="210" r="3.5" fill="#FFFBEB"/>
+  <ellipse cx="220" cy="225" rx="3" ry="6" fill="#65A30D" transform="rotate(30 220 225)"/>
+  <!-- Holy Tulsi Leaf on Prasad -->
+  <path d="M 220,175 C 210,160 215,150 220,145 C 225,150 230,160 220,175 Z" fill="#15803D" stroke="#86EFAC" stroke-width="1"/>
+
+  <!-- Sacred Brass Diya Lamp with radiant flame -->
+  <g transform="translate(365, 235)" filter="url(#diyaGlow)">
+    <!-- Shadow -->
+    <ellipse cx="25" cy="55" rx="35" ry="12" fill="#5A2B18" opacity="0.25"/>
+    <!-- Diya Base Stand -->
+    <path d="M 10,48 L 40,48 L 32,38 L 18,38 Z" fill="url(#brassPlate)"/>
+    <!-- Diya Cup -->
+    <path d="M 0,38 Q 25,58 50,38 Q 25,28 0,38 Z" fill="url(#brassPlate)" stroke="#CA8A04" stroke-width="1.5"/>
+    <!-- Golden Ghee Pool -->
+    <ellipse cx="25" cy="38" rx="20" ry="5" fill="#F59E0B"/>
+    <!-- Brilliant Flame -->
+    <path d="M 25,35 Q 30,15 25,2 Q 15,18 25,35 Z" fill="#FEF08A"/>
+    <path d="M 25,33 Q 28,18 25,8 Q 18,20 25,33 Z" fill="#EA580C"/>
+  </g>
+
+  <!-- Fresh Rose & Marigold Petals Scattered around Offering -->
+  <ellipse cx="105" cy="295" rx="10" ry="6" fill="#DC2626" transform="rotate(-20 105 295)"/>
+  <ellipse cx="120" cy="305" rx="8" ry="5" fill="#F59E0B" transform="rotate(35 120 305)"/>
+  <ellipse cx="340" cy="305" rx="9" ry="6" fill="#DC2626" transform="rotate(15 340 305)"/>
+  <ellipse cx="360" cy="295" rx="10" ry="6" fill="#F59E0B" transform="rotate(-30 360 295)"/>
+  <ellipse cx="230" cy="325" rx="10" ry="5" fill="#DC2626" transform="rotate(10 230 325)"/>
+
+  <!-- Incense Smoke Swirls (Agarbatti) -->
+  <g stroke="#D4AF37" stroke-width="1.2" opacity="0.5" fill="none">
+    <path d="M 390,210 Q 375,170 395,130 Q 410,90 390,60"/>
+    <path d="M 395,210 Q 415,165 390,125 Q 380,85 400,55"/>
+  </g>
+
+  <!-- Title Badge overlay at bottom -->
+  <rect x="125" y="345" width="250" height="36" rx="18" fill="#7A0715" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="250" y="368" font-family="serif" font-size="15" font-weight="bold" fill="#FDE047" text-anchor="middle" letter-spacing="1">
+    Made with Devotion
+  </text>
+</svg>

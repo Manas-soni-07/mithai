@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="c1Bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF5"/>
+      <stop offset="60%" stop-color="#FAF0D8"/>
+      <stop offset="100%" stop-color="#F2E0BD"/>
+    </radialGradient>
+    <linearGradient id="c1Clay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="40%" stop-color="#B45309"/>
+      <stop offset="80%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+    <radialGradient id="c1Churma" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="75%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="400" fill="url(#c1Bg)"/>
+  
+  <!-- Subtle Mandala in background -->
+  <circle cx="250" cy="200" r="140" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.35" stroke-dasharray="6 4"/>
+  <circle cx="250" cy="200" r="170" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.25"/>
+
+  <!-- Earthen Handi / Matka Vessel -->
+  <!-- Shadow -->
+  <ellipse cx="250" cy="335" rx="140" ry="25" fill="#5A2B18" opacity="0.18"/>
+
+  <!-- Handi Body -->
+  <path d="M 140,240 C 120,310 200,340 250,340 C 300,340 380,310 360,240 C 350,215 320,205 250,205 C 180,205 150,215 140,240 Z" fill="url(#c1Clay)"/>
+  <!-- Decorative Band on Handi -->
+  <path d="M 136,255 Q 250,285 364,255" stroke="#FFE082" stroke-width="4" fill="none"/>
+  <path d="M 142,268 Q 250,298 358,268" stroke="#FFE082" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+
+  <!-- Churma Heap Overflowing from Matka -->
+  <path d="M 160,210 C 170,120 220,95 250,95 C 280,95 330,120 340,210 C 320,225 180,225 160,210 Z" fill="url(#c1Churma)"/>
+
+  <!-- Churma Granules & Texture -->
+  <g fill="#FEF08A" opacity="0.8">
+    <ellipse cx="230" cy="140" rx="14" ry="9"/>
+    <ellipse cx="270" cy="135" rx="12" ry="8"/>
+    <ellipse cx="215" cy="165" rx="16" ry="11"/>
+    <ellipse cx="285" cy="160" rx="15" ry="10"/>
+    <ellipse cx="250" cy="180" rx="20" ry="12"/>
+    <ellipse cx="200" cy="190" rx="14" ry="9"/>
+    <ellipse cx="300" cy="185" rx="16" ry="10"/>
+  </g>
+
+  <!-- Crushed Almonds, Cashews (Kaju) and Pistachio -->
+  <path d="M 230,125 C 225,115 240,110 248,122 C 248,130 235,130 230,125 Z" fill="#FFFBEB" stroke="#D97706" stroke-width="0.8"/>
+  <path d="M 265,145 C 275,135 285,145 280,155 C 270,155 260,150 265,145 Z" fill="#FFFBEB" stroke="#D97706" stroke-width="0.8"/>
+  <ellipse cx="255" cy="130" rx="4" ry="7" fill="#84CC16" transform="rotate(25 255 130)"/>
+  <ellipse cx="225" cy="175" rx="5" ry="8" fill="#84CC16" transform="rotate(-30 225 175)"/>
+
+  <!-- Tulsi Leaf -->
+  <g transform="translate(250, 105) scale(0.8)">
+    <path d="M 0,0 C -8,-10 -6,-22 0,-28 C 6,-22 8,-10 0,0 Z" fill="#15803D" stroke="#86EFAC" stroke-width="0.8"/>
+  </g>
+
+  <!-- Title Badge overlay at bottom -->
+  <rect x="125" y="345" width="250" height="36" rx="18" fill="#7A0715" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="250" y="368" font-family="serif" font-size="15" font-weight="bold" fill="#FDE047" text-anchor="middle" letter-spacing="1">
+    Traditional Taste
+  </text>
+</svg>

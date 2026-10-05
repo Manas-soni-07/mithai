@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600" width="100%" height="100%" fill="none" opacity="0.12">
+  <defs>
+    <linearGradient id="templeGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7A0715" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Repeated Mandir Shikhar & Arches pattern -->
+  <g stroke="url(#templeGold)" stroke-width="1.5">
+    <!-- Center Grand Shikhar -->
+    <path d="M 720,50 L 710,120 Q 670,220 670,380 L 770,380 Q 770,220 730,120 Z"/>
+    <!-- Kalash & Dhwaja -->
+    <path d="M 720,20 L 720,50 M 720,25 Q 735,30 720,40 M 715,50 L 725,50"/>
+    
+    <!-- Flanking Shikhars -->
+    <path d="M 520,110 L 512,160 Q 480,250 480,380 L 560,380 Q 560,250 528,160 Z"/>
+    <path d="M 920,110 L 912,160 Q 880,250 880,380 L 960,380 Q 960,250 928,160 Z"/>
+
+    <path d="M 340,160 L 334,200 Q 310,280 310,380 L 370,380 Q 370,280 346,200 Z"/>
+    <path d="M 1100,160 L 1094,200 Q 1070,280 1070,380 L 1130,380 Q 1130,280 1106,200 Z"/>
+
+    <path d="M 160,200 L 155,240 Q 135,300 135,380 L 185,380 Q 185,300 165,240 Z"/>
+    <path d="M 1280,200 L 1275,240 Q 1255,300 1255,380 L 1305,380 Q 1305,300 1285,240 Z"/>
+
+    <!-- Rajasthani Ornate Cusped Arches -->
+    <path d="M 620,380 C 620,330 670,310 720,310 C 770,310 820,330 820,380" stroke-width="2"/>
+    <path d="M 640,380 C 640,340 680,325 720,325 C 760,325 800,340 800,380"/>
+
+    <path d="M 440,380 C 440,340 480,325 520,325 C 560,325 600,340 600,380"/>
+    <path d="M 840,380 C 840,340 880,325 920,325 C 960,325 1000,340 1000,380"/>
+
+    <!-- Pillars / Columns -->
+    <line x1="620" y1="380" x2="620" y2="520"/>
+    <line x1="820" y1="380" x2="820" y2="520"/>
+    <line x1="440" y1="380" x2="440" y2="520"/>
+    <line x1="1000" y1="380" x2="1000" y2="520"/>
+
+    <!-- Base Plinth -->
+    <line x1="0" y1="520" x2="1440" y2="520" stroke-width="2"/>
+    <line x1="0" y1="535" x2="1440" y2="535"/>
+
+    <!-- Subtle Jali / Floral Mandala -->
+    <circle cx="720" cy="430" r="35" stroke-dasharray="4 3"/>
+    <circle cx="720" cy="430" r="18"/>
+  </g>
+</svg>

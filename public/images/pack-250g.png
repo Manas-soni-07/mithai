@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p250Bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="80%" stop-color="#FAF0D8"/>
+      <stop offset="100%" stop-color="#F2E4C4"/>
+    </radialGradient>
+    <linearGradient id="maroon250" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#881337"/>
+      <stop offset="50%" stop-color="#7A0715"/>
+      <stop offset="100%" stop-color="#4C0519"/>
+    </linearGradient>
+    <linearGradient id="goldCap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="35%" stop-color="#FDE047"/>
+      <stop offset="70%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+    <filter id="packShadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#4A0E17" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="320" fill="url(#p250Bg)"/>
+  <circle cx="200" cy="160" r="110" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.3" stroke-dasharray="4 4"/>
+
+  <!-- Pack Container (250g Premium Jar / Box) -->
+  <g filter="url(#packShadow)">
+    <ellipse cx="200" cy="255" rx="80" ry="18" fill="#5A2B18" opacity="0.25"/>
+
+    <!-- Cylindrical / Rounded Body -->
+    <path d="M 130,130 C 130,120 270,120 270,130 L 270,230 C 270,250 130,250 130,230 Z" fill="url(#maroon250)" stroke="#D4AF37" stroke-width="2"/>
+    <ellipse cx="200" cy="230" rx="70" ry="18" fill="#7A0715"/>
+
+    <!-- Golden Jar Lid -->
+    <ellipse cx="200" cy="130" rx="72" ry="18" fill="url(#goldCap)" stroke="#854D0E" stroke-width="1.5"/>
+    <ellipse cx="200" cy="126" rx="66" ry="15" fill="#FEF08A"/>
+
+    <!-- Label on Front -->
+    <rect x="145" y="150" width="110" height="70" rx="8" fill="#FFFDF8" stroke="#D4AF37" stroke-width="1.5"/>
+    <rect x="149" y="154" width="102" height="62" rx="6" fill="none" stroke="#7A0715" stroke-width="1" stroke-dasharray="3 2"/>
+
+    <!-- Peacock Feather motif on label -->
+    <ellipse cx="200" cy="172" rx="9" ry="12" fill="#0284C7"/>
+    <ellipse cx="200" cy="172" rx="6" ry="8" fill="#15803D"/>
+    <ellipse cx="200" cy="172" rx="3" ry="4" fill="#EAB308"/>
+
+    <text x="200" y="195" font-family="serif" font-size="9" font-weight="bold" fill="#7A0715" text-anchor="middle" letter-spacing="0.5">
+      SHREE SHYAM
+    </text>
+    <text x="200" y="206" font-family="serif" font-size="8" font-weight="bold" fill="#B45309" text-anchor="middle">
+      CHURMA PRASAD
+    </text>
+
+    <!-- 250 g Golden Badge -->
+    <circle cx="250" cy="140" r="20" fill="url(#goldCap)" stroke="#FFF" stroke-width="1.5" filter="url(#packShadow)"/>
+    <text x="250" y="141" font-family="sans-serif" font-size="9" font-weight="bold" fill="#7A0715" text-anchor="middle">
+      250g
+    </text>
+    <text x="250" y="150" font-family="sans-serif" font-size="6.5" font-weight="bold" fill="#7A0715" text-anchor="middle">
+      PACK
+    </text>
+  </g>
+</svg>
